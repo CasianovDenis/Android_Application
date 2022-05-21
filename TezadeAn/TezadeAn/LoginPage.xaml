@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="TezadeAn.LoginPage">
+
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="300" >
+
+            <Label Text="Keep Conected" TextColor="black" FontSize="26" FontAttributes="Bold" Margin="0,0,0,0" />
+            <Label Text="Enter yout email address and password to get access your account" TextColor="black" FontSize="17" 
+                   FontAttributes="none" Margin="0,0,0,10"/>
+
+            <Frame CornerRadius="10" >
+                <Entry x:Name="EntryMail"  Placeholder="Email" />
+            </Frame>
+
+            <Frame CornerRadius="10" Margin="0,20,0,0">
+                <Entry   Placeholder="Password"
+                     IsPassword="True"/>
+            </Frame>
+            <CheckBox /> 
+            <Label Text="Remember me" Margin="40,-35,0,0" FontSize="18"/>
+
+            <Label x:Name="LabelError" TextColor="LightCoral" FontSize="18" Margin="0,20,0,0"/>
+            <!--Login Button-->
+            <Button Text="Get Login" Clicked="Button_OnClick" VerticalOptions="Center" 
+                    HorizontalOptions="Center" BackgroundColor="RoyalBlue"
+                    TextColor="white"
+                    Margin="0,20,0,0"
+                    CornerRadius="10"/>
+            <!--Create acount button-->
+            <Button Text="Create Account" Clicked="Button_Clicked" VerticalOptions="Center" 
+                    HorizontalOptions="Center" BackgroundColor="RoyalBlue"
+                    TextColor="white"
+                    Margin="0,20,0,0"
+                    CornerRadius="10"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

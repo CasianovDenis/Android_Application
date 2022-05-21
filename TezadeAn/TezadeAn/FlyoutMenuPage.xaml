@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:TezadeAn"
+             Title="FlyoutMenu"
+             x:Class="TezadeAn.FlyoutMenuPage">
+
+    <StackLayout>
+        <Grid>
+            <Image Source="menuimage.jpg" Margin="-100,0,-100,0" />
+        </Grid>
+        <ListView x:Name="listview" x:FieldModifier="public">
+            <ListView.ItemsSource>
+                <x:Array Type="{x:Type local:FlyoutItemPage}">
+                    <local:FlyoutItemPage Title="Home" IconSource="iconhome.png" TargetPage="{x:Type local:HomePage}" />
+                    <local:FlyoutItemPage Title="About" IconSource="iconabout.png" TargetPage="{x:Type local:AboutPage}" />
+                </x:Array>
+            </ListView.ItemsSource>
+            
+            <ListView.ItemTemplate >
+                <DataTemplate >
+                    <ViewCell >
+                        <Grid >
+                            <Grid.ColumnDefinitions >
+                                <ColumnDefinition Width="50"/>
+                                <ColumnDefinition Width="800*"/>
+                            </Grid.ColumnDefinitions>
+                            <Image Source="{Binding IconSource}" />
+                            <Label Grid.Column="1" Text="{Binding Title}" FontSize="20" TextColor="Black" FontAttributes="Bold"/>
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>

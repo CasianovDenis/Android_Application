@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TezadeAn.HomePage"
+             Style="{StaticResource BackgroundStyle}">
+    <ContentPage.Content>
+        <Grid>
+           <StackLayout >
+               
+              <Grid BackgroundColor="white" HeightRequest="300" >
+<!--Image-->
+                <Grid >
+                    <Image Source="homephoto.jpg" 
+                           Aspect="AspectFill"/>
+                </Grid>
+
+             
+              </Grid>
+<!--Text-->
+                <Grid >
+
+                    <Grid Margin="10,30,0,0">
+
+                        <Label Text="Welcome to My application" TextColor="black" FontAttributes="Bold" FontSize="30" />
+                        
+                    </Grid>
+
+                </Grid>
+<!--Button-->
+                <Grid >
+
+                    <Grid Margin="0,30,0,0">
+
+                        <Button Text="Login Now" TextColor="white" FontSize="15"  Clicked="Button_Clicked"  HorizontalOptions="Center" 
+                                BackgroundColor="RoyalBlue"
+                                CornerRadius="10"/>
+                    </Grid>
+
+                </Grid>
+
+                <Grid >
+
+                    <Grid Margin="0,30,0,0">
+
+                        <Button Text="Create Account" TextColor="white" FontSize="15"  Clicked="Button_Clicked1"  HorizontalOptions="Center" 
+                                BackgroundColor="RoyalBlue"
+                                CornerRadius="10"/>
+                    </Grid>
+
+                </Grid>
+
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

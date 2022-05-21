@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TezadeAn.CreateAcountPage">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="300" >
+
+            <Label Text="Create Account" TextColor="black" FontSize="26" FontAttributes="Bold" Margin="70,0,0,20"/>
+
+            <Label Text="Username"  FontSize="20" FontAttributes="Bold" TextColor="black" />
+
+            <Frame CornerRadius="10"  Margin="0,10,0,0">
+                <Entry x:Name="EntryMail"  Placeholder="test" />
+            </Frame>
+
+            <Label Text="Email"  FontSize="20" FontAttributes="Bold" TextColor="black" />
+
+            <Frame CornerRadius="10"  Margin="0,10,0,0">
+                <Entry x:Name="EntryMail1"  Placeholder="test@gmail.com" />
+            </Frame>
+
+            <Label Text="Password"  FontSize="20" FontAttributes="Bold" TextColor="black" />
+
+            <Frame CornerRadius="10" Margin="0,10,0,0">
+                <Entry   Placeholder="Password"
+                     IsPassword="True"/>
+            </Frame>
+            
+
+            <Label x:Name="LabelError" TextColor="LightCoral" FontSize="18" Margin="0,20,0,0"/>
+            <!--Create acount button-->
+            <Button Text="Create Account" Clicked="Button_Clicked1" VerticalOptions="Center" 
+                    HorizontalOptions="Center" BackgroundColor="RoyalBlue"
+                    TextColor="white"
+                    Margin="0,-10,0,0"
+                    CornerRadius="10"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
