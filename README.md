@@ -3,4 +3,4 @@
 
 -XAML was use to create the flyout menu, the navigation buttons,and the "login" and "registration" pages.
 
--I used the C# programming language to make the buttons work
+-Was used the C# programming language to make the buttons work
